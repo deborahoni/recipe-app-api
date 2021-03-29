@@ -62,7 +62,7 @@ class ModelTests(TestCase):
 
     def test_recipe_str(self):
         """ test the recipe strin representation"""
-        recipe = models.recipe.objects.create(
+        recipe = models.Recipe.objects.create(
             user = sample_user(),
             title = 'steak and mushroom sauce',
             time_minutes = 5,
